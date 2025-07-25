@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #26d420, #3fda20, #51d628);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+} 
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00d81d;
+}
+
+.logo .highlight {
+  color: #90ee90;
+}
+/* Contact Card */
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(21, 255, 0, 0.986);
+  backdrop-filter: blur(6px);
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Foto Profil */
+.contact-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ff6a;
+  box-shadow: 0 0 15px #00ff40;
+  margin-bottom: 20px;
+}
+
+/* Teks Judul dan Info */
+.contact-card h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #d3f8ff;
+  transition: 0.3s ease;
+}
+
+.contact-card p:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .contact-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-card h1 {
+    font-size: 20px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+  }
+}
